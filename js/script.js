@@ -32,7 +32,6 @@ function getData(string) {
   fetch(`https://api.github.com/search/repositories?q=${string}&per_page=5`, {
     headers: {
       Accept: "application/vnd.github.v3+json",
-      Authorization: "token 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",
     },
   })
     .then((result) => result.json())
